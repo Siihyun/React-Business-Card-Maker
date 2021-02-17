@@ -12,6 +12,7 @@ class AuthService {
   }
 
   onAuthChange(onUserChanged) {
+    console.log("onAuthChange 실행");
     firebase.auth().onAuthStateChanged((user) => {
       onUserChanged(user);
     });

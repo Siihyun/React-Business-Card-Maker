@@ -7,7 +7,7 @@ function App({ authService }) {
   return (
     <Router>
       <Switch>
-        <Route path={["/", "/login"]} exact>
+        <Route exact path={["/", "/login"]}>
           <div className={styles.app}>
             <Login authService={authService} />
           </div>

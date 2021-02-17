@@ -25,6 +25,7 @@ const Login = ({ authService }) => {
 
   useEffect(() => {
     console.log("login useEffect 실행");
+    console.log("hahaha!!!\n\n\n");
     authService.onAuthChange((user) => {
       user && goToMain(user.uid);
     });
